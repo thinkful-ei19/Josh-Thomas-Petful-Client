@@ -5,7 +5,7 @@ export const fetchDog = () => dispatch => {
     console.log('Attempting to fetch a dog');
     dispatch(fetchDogRequest());
   
-    fetch(`${API_BASE_URL}/dog`)
+    fetch(`${API_BASE_URL}/dogs`)
       .then(res => {
         if (!res.ok) {
           console.log('error fetching the dog!');
@@ -43,7 +43,7 @@ export const fetchDog = () => dispatch => {
     console.log('adopt dog');
     dispatch(adoptDogRequest());
   
-    fetch(`${API_BASE_URL}/dog`, { method: 'DELETE' })
+    fetch(`${API_BASE_URL}/dogs`, { method: 'DELETE' })
       .then(res => {
         if (!res.ok) {
           console.log('error adopting dog');
