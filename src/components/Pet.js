@@ -33,7 +33,7 @@ export default function Pet(props) {
         <h3>More about {props.name}</h3>
         <dl className="pet-attributes">
           <dt className="term-sex">Sex</dt>
-          <dd className="def-sex">{props.sex}</dd>
+          <dd className="def-sex">{props.gender}</dd>
           <dt className="term-age">Age</dt>
           <dd className="def-age">{props.age} years</dd>
           <dt className="term-breed">Breed</dt>
